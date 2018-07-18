@@ -18,6 +18,19 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
+	<distributionManagement>
+        <repository>
+            <id>repostory</id> <!--id对应setting文件server配置的节点-->
+            <name>Nexus Release Repository</name>
+            <url>http://114.55.13.171:8081/repository/ccclubs/</url>
+        </repository>
+        <snapshotRepository>
+            <id>repostory</id>
+            <name>Nexus Release snapshot</name>
+            <url>http://114.55.13.171:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+	
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
